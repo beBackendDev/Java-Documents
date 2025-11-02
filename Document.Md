@@ -1,6 +1,61 @@
 # **Java Core** 
+## Table of content
+**Syntax**
 
-## About Java:
+`Variable`
+
+`User input`
+
+`Arithmetic`
+
+`If Statements`
+
+`Random Number`
+
+`Math class`
+
+`Printf`
+
+`Nested If Statements`
+
+`Ternary Operator`
+
+` String methods `
+
+` Substrings `
+
+` Enhanced Switches`
+
+` Logical Operators`
+
+` While loops`
+
+` For loops`
+
+` break & continue`
+
+` Nested Loops`
+
+` Methods( Function)`
+
+` Variable scope`
+
+**Array**
+
+`Array`
+
+`2D array`
+
+**Object-Oriented Programming**
+
+`OOP( Object-Oriented Programming)`
+
+`Tính chất của OOP`
+* **Abstract( Trừu tượng)**
+* **Inheritance( Kế thừa)**
+* **Polymorphism ( Đa hình)**
+* **Encapsulation ( Đóng gói)**
+## About Java
 Phải download **Java Development Kit (JDK)** và phải có **Intergrated Development Enviroment (IDE)** 
 
 
@@ -222,6 +277,8 @@ public static void changeWebsite(String website){
 * **Static Class:** Một class có thể được đặt là `static` khi nó là một `nested class`. Một `nested static class` có thể được truy cập mà không cần một `object` của một `outer class` ( Lớp bên ngoài).
 
 ## 22. Tính chất của OOP:
+Tài liệu tham khảo thêm về Java OOP: [Tính chất OOP](https://viblo.asia/p/tim-hieu-tinh-da-hinh-trong-java-EoW4omXALml)
+
 Object-Oriented Programming( OOP) là một khái niệm quang trọng trong xuyên suốt lập trình, hầu như trong xuyên suốt bất kì Project nào đó thì đều có sự góp mặt của OOP. OOP có 4 tính chất cơ bản.
     ![alt text](image-1.png)
 * **Kế thừa( Inheritance)**: Là một lớp kế thừa toàn bộ các attributes và methods của lớp cha thông quan từ khóa `exxtend`
@@ -253,12 +310,44 @@ public abstract class Shape{
 * **Đóng gói( Encapsulation)**:
 * **Đa hình( Polymorphism)**:
     * `PolyMorphism` được định nghĩa là đa hình( Poly = Many, Morph = Shape).
-    * Objects can identify as other objects.
-    * Objects can be treated as objetcs of a common superclass.
-    
-    ví dụ:
+    * Một đối tượng có thể được định nghĩa lại bằng một đối tượng khác, ở đây đối được cha hay còn được gọi là đối tượng cơ sở được các đối tượng con identify lại.
+    * Objects can be treated as objetcs of a common superclass( các đối tượng có thể được coi như là đối tượng của chung một lớp cha).
+    * PolyMorphism có 2 loại đa hình, là đa hình tại quá trình biên dịch( Compile-runtime PolyMorphism) và quá trình runtime(Runtime Polymorphism).
+        * `Compile- Runtime PolyMorphism` thường là quá trình Method Overloading và Operator Overloading như trong Java không sử dụng Operator Overloading.
+        ```
+        class Calculator {
+            int add(int a, int b) {
+                return a + b;
+            }
 
-Ta có lớp Vehicle và các lớp kế thừa( Abstract) hoặc Interface nó như: `Car`, `Boat`, `Bike`. Và PolyMorphism được hiểu đơn giản là 
+            double add(double a, double b) {
+                return a + b;
+            }
+        }
+        ```
+
+        * `Runtime Polymorphism` được thực hiện thông qua kế thừa( `Inheritance`) hoặc `Method Override`.
+        ```
+         class Animal {
+            void makeSound() {
+        System.out.println("Animal makes a sound");
+            }
+            }
+
+        class Dog extends Animal {
+            void makeSound() {
+                System.out.println("Dog barks");
+            }
+        }
+
+        class Cat extends Animal {
+            void makeSound() {
+                System.out.println("Cat meows");
+            }
+        }
+`
+    ```
+
 ## 23. 
 
 --------------------TEMPLATE--------------------
