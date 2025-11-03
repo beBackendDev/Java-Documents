@@ -2,71 +2,95 @@
 ## Table of content
 **Syntax**
 
-`Variable`
+1. [Variable](#1-variable)
 
-`User input`
+2. [User input](#2-user-input)
 
-`Arithmetic`
+3. [Arithmetic](#3-arithmetic)
 
-`If Statements`
+4. [If Statements](#4-if-statements)
 
-`Random Number`
+5. [Random Number](#5-random-number)
 
-`Math class`
+6. [Math class](#6-math-class)
 
-`Printf`
+7. [Printf](#7-printf)
 
-`Nested If Statements`
+8. [Nested If Statements](#8-nested-if-statements)
 
-`Ternary Operator`
+9. [Ternary Operator](#9-ternary-operator)
 
-` String methods `
+10. [String methods](#10-string-methods)
 
-` Substrings `
+11. [Substrings](#11-substrings)
 
-` Enhanced Switches`
+12. [Enhanced Switches](#12-enhanced-switches)
 
-` Logical Operators`
+13. [Logical Operators](#13-logical-operators)
 
-` While loops`
+14. [While loops](#14-While-loops)
 
-` For loops`
+15. [For loops](#15-for-loops)
 
-` break & continue`
+16. [break & continue](#16-break-&-continue)
 
-` Nested Loops`
+17. [Nested Loops](#17-nested-loops)
 
-` Methods( Function)`
+18. [Methods( Function)](#18-methods-function)
 
-` Variable scope`
+19. [Variable scope](#19-variable-scope)
 
 **Array**
 
-`Array`
+20. [Array](#20-array)
 
-`2D array`
+21. [2D array](#21-2d-array)
 
 **Object-Oriented Programming**
 
-`OOP( Object-Oriented Programming)`
+22. [OOP( Object-Oriented Programming)](#22-oop-object-oriented-programming)
 
-`Tính chất của OOP`
-* **Abstract( Trừu tượng)**
-* **Inheritance( Kế thừa)**
-* **Polymorphism ( Đa hình)**
-* **Encapsulation ( Đóng gói)**
-## About Java
+23. [Tính chất của OOP](#23-tính-chất-của-oop)
+
+* [Inheritance( Kế thừa)]()
+* [Abstract( Trừu tượng)]()
+* [Polymorphism ( Đa hình)]()
+* [Encapsulation ( Đóng gói)]()
+
+24. [Association( Liên kết)](#24-association-liên-kết)
+25. [Aggregation( Kết tập/ Tổng hợp)](#25-aggregation-kết-tập-tổng-hợp)
+26. [Composition( Hợp thành)](#26-composition-hợp-thành)
+27. [Wrapper classes](#)
+28. [ArrayList](#)
+29. [](#)
+30. [Exception Handling](#)
+31. [Write files](#)
+32. [Read files](#)
+33. [Date & Time](#)
+34. [Anonymous Classes](#)
+35. [TimeTask](#)
+36. [Countdown Timer](#)
+37. [Generics](#)
+38. [Hashmaps](#)
+39. [Enums](#)
+40. [Threading](#)
+41. [MultiThreading](#)
+42. [](#)
+
+
+
+## **About Java**
 Phải download **Java Development Kit (JDK)** và phải có **Intergrated Development Enviroment (IDE)** 
 
 
-## 1. Variable:
+## **1.Variable:**
 Biến được khai báo có thể có giá trị hoặc không có giá trị truyền vào:
 
 `int username; //declare without value`
 
 `String username = "dev Thoai"; //declare with value be assigned`
 
-## 2. User input:
+## **2. User input:**
 Java thực hiện lấy thông tin đầu vào của người dùng thông qua thư viện Scanner và nó thực hiện lấy giá trị thông qua các method như: `.nextLine(), .nextInt(), .nextDouble() ...`
 
 example: 
@@ -85,11 +109,10 @@ example:
 
  scanner.close(); 
 ```
-
-## 3. Arithmetic:
+## **3. Arithmetic:**
 Phép toán thông thường, tham khảo thêm: [Java Arithmetic Operators](https://www.geeksforgeeks.org/java/java-arithmetic-operators-with-examples/).
 
-## 4. If Statements:
+## **4. If Statements:**
 Thực hiện khối câu lệnh bên trong if nếu điều kiện if thỏa mãn
 ``` 
     if(condition){
@@ -102,7 +125,7 @@ Thực hiện khối câu lệnh bên trong if nếu điều kiện if thỏa m�
     }
 ```
 
-## 5. Random Number:
+## **5. Random Number:**
 Thực hiện khởi tạo một số ngẫu nhiêu trong khoảng a- b;
 
 example: 
@@ -116,19 +139,19 @@ number = random.nextInt(); //thực hiện lấy số ngẫu nhiên từ -2 bill
 number1 = random.nextInt(a, b);// random trong khoảng từ a- b
 ```
 
-## 6. Math class:
+## **6. Math class:**
 Một vài hàm có sẵn để tính toán như căn bậc 2, trị tuyệt đối, số Pi ... 
 
 vd: `pow(), sqrt(), Pi, E, abs()`
 
 Bạn có thể tham khảo thêm một số hàm toán học có sẵn tại [GeeksforGeeks](https://www.geeksforgeeks.org/java/java-math-class/).
 
-## 7. Printf:
+## **7. Printf:**
 >    **printf()**  là phương thức được sử dụng cho format của ouput
 
 Xem thêm tại đây: [format output](https://www.geeksforgeeks.org/java/formatted-output-in-java/)
 
-## 8. Nested If Statements:
+## **8. Nested If Statements:**
 ```
 if(condition){
     if(condition){
@@ -145,7 +168,7 @@ if(condition){
     }
 ```
 
-## 9. Ternary Operator:
+## **9. Ternary Operator:**
 ```
     //ternary operator ? = return 1 of 2 values if a condition is true.
     // variable = (condition)?ifTrue: ifFalse;
@@ -154,13 +177,13 @@ if(condition){
     System.out.println( taxRate);
 ```
 
-## 10. String methods: 
+## **10. String methods:**
 Xem thêm : [Java String methods](https://www.geeksforgeeks.org/java/java-string-methods/).
 
-## 11. Substrings: 
+## **11. Substrings:** 
 Xem thêm : [Java SubString methods](https://www.geeksforgeeks.org/java/substring-in-java/).
 
-## 12. Enhanced Switches:
+## **12. Enhanced Switches:**
 Syntax:
 ```
 switch(Var){
@@ -171,29 +194,29 @@ switch(Var){
     default -> {statements}
 }
 ```
-## 13. Logical Operators:
+## **13. Logical Operators:**
 
-## 14. While loops:
+## **14. While loops:**
 while loops will repeat some code forever while some condition remain true.
 
 `while (condition){statements};`
-## 14. For loops:
+## **15. For loops:**
 For loops execute some code a **CERTAIN amount of times**.
 
-## 15. break & continue:
+## **16. break & continue:**
 **break** = break out of a loop( STOP)
 
 **continue** = skip current interaction of a loop( SKIP)
 
-## 16. Nested Loops:
+## **17. Nested Loops:**
 A loop inside another loop used often with matrices or DS&A.
 
-## 17. Methods( Function):
+## **18. Methods( Function):**
 Method is **a block of reusable code** that is executed when called ().
 
-## 18. Variable scope:
+## **19. Variable scope:**
 
-## 19. Array:
+## **20. Array:**
 - This contain many variables that have same data_type.
 Syntax: 
 
@@ -205,9 +228,9 @@ Syntax:
 
 - If you wanna find position of each value you can try lieanr search, like count by length and when each value equal which value you find -> return it. If array have same value( over two same value) you have to return sub array( which save same value you want to find).
 - And in here have new content `varargs` stand for `variable arguments` . Like `array`, work with `varargs` like with array but with `array` you must assign value before pass into function, `varargs` you dont need do that, this will be assigned when process executed. 
-## 20. 2D array:
+## **21. 2D array:**
 
-## 21. OOP( Object-Oriented Programming):
+## **22. OOP( Object-Oriented Programming):**
 * `Object` is a entity that holds data( attributes) and can perform     actions (methods). Its a reference data type.
     
 * We have some concepts in Object:
@@ -276,15 +299,15 @@ public static void changeWebsite(String website){
 * **Static Block:** Được sử dụng để khởi tạo thành viên static.
 * **Static Class:** Một class có thể được đặt là `static` khi nó là một `nested class`. Một `nested static class` có thể được truy cập mà không cần một `object` của một `outer class` ( Lớp bên ngoài).
 
-## 22. Tính chất của OOP:
+## **23. Tính chất của OOP:**
 Tài liệu tham khảo thêm về Java OOP: [Tính chất OOP](https://viblo.asia/p/tim-hieu-tinh-da-hinh-trong-java-EoW4omXALml)
 
 Object-Oriented Programming( OOP) là một khái niệm quang trọng trong xuyên suốt lập trình, hầu như trong xuyên suốt bất kì Project nào đó thì đều có sự góp mặt của OOP. OOP có 4 tính chất cơ bản.
     ![alt text](image-1.png)
-* **Kế thừa( Inheritance)**: Là một lớp kế thừa toàn bộ các attributes và methods của lớp cha thông quan từ khóa `exxtend`
+### **a. Kế thừa( Inheritance)**: Là một lớp kế thừa toàn bộ các attributes và methods của lớp cha thông quan từ khóa `exxtend`
     * **super:**
     * **method overriding:** Khi lớp con( subclass) cung cấp hành vi của method của chính nó để ghi đè lên method đã được định nghĩa ở lớp cha để thay đổi hành vi của method. Cho phép code được tái sử dụng với một hành vi chi tiết được đưa vào.
-* **Trừu tượng( Abstraction)**: 
+### **b. Trừu tượng( Abstraction)**: 
     * Used to define abstract classes and methods. Abstraction is a process of **hidding implementation details** and **showing only the essential features**. 
     * Abstract classes  CANT be instantiated directly.
     * Can contain `'abstract'` methods( which must be implemented).
@@ -307,8 +330,45 @@ public abstract class Shape{
     * Interface is a `blueprint` for a class that specifies a set of abstract methods that implementing classes MUST define. Supports multiple inheritance- like behavior.
     * Khác với abstract, interface sử dụng từ khóa implement cho subclass
 
-* **Đóng gói( Encapsulation)**:
-* **Đa hình( Polymorphism)**:
+### **c. Đóng gói( Encapsulation)**:
+    * `Encapsulation` là quá trình bảo vệ các thông tin quan trọng (như thông tin người dùng, thông tin bảo mật khác...) thông qua phạm vi truy cập như private protected và chỉ public các thông tin, method cần thiết để thực hiện chương trình.
+    * Như ở ví dụ dưới đây,các thuộc tính như `accountNumber` và `balance` được bảo vệ thông qua một biến `private` và chỉ có thể thao tác thông qua các hàm như `deposit()`, `withdraw()` và các `getter`.
+
+    ```
+    public class BankAccount {
+    private String accountNumber; // Số tài khoản
+    private double balance; // Số dư
+
+    // Các phương thức để thực hiện giao dịch và cập nhật số dư
+    public void deposit(double amount) {
+        // Thêm số tiền vào số dư
+        balance += amount;
+        // Các bước khác để cập nhật giao dịch, ví dụ như lưu vào lịch sử giao dịch
+    }
+
+    public void withdraw(double amount) {
+        // Kiểm tra điều kiện trước khi rút tiền
+        if (amount <= balance) {
+            // Trừ số tiền khỏi số dư
+            balance -= amount;
+            // Các bước khác để cập nhật giao dịch và lịch sử rút tiền
+        } else {
+            System.out.println("Số dư không đủ để thực hiện giao dịch.");
+        }
+    }
+
+    // Các phương thức getter để truy cập thông tin tài khoản một cách an toàn
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+    }
+    ```
+
+### **d. Đa hình( Polymorphism)**:
     * `PolyMorphism` được định nghĩa là đa hình( Poly = Many, Morph = Shape).
     * Một đối tượng có thể được định nghĩa lại bằng một đối tượng khác, ở đây đối được cha hay còn được gọi là đối tượng cơ sở được các đối tượng con identify lại.
     * Objects can be treated as objetcs of a common superclass( các đối tượng có thể được coi như là đối tượng của chung một lớp cha).
@@ -348,71 +408,101 @@ public abstract class Shape{
 `
     ```
 
-## 23. 
+## **24. Association( Liên kết):**
+* `Association` là một khái niệm cốt lõi( cardinal concept) trong OOP, nó mô tả mối quan hệ giữa các lớp( classes) độc lập nhau
+* `Association` có thể được xem như là một mối quan hệ "uses-a" nơi mà một object sủ dụng hoặc nhiều tương tác theo nhiều cách với một object khác.
+* `Association` có thể là đơn hướng( unidirectional) hoặc song hướng( bidirectional) và có thể tồn tại dưới nhiều dạng khác như `one-to-one`, `one-to-many`, `many-to-one` và `many-to-many`.
+* Có 2 loại liên kết( Association) là `unidirectional` và `bidirectional`.
+    * `Uni-Directioonal`: có nghĩa là chỉ có một mình nó có thể nhận ra và liên kết với lớp khác chứ ngược lại thì không đúng. Ví dụ như đối với class `Student()` và `LibraryCard()` với mối quan hệ là "học sinh có thẻ thư viện" chứ không có mối quan hệ ngược lại là "Thẻ thư viện có học sinh". 
+    * `Bi-Directional`: có nghĩa là 2 lớp đều nhận biết nhau và đều tương tác với lớp khác. Ví dụ như mối quan hệ giữa `Teacher()` và `Classroom()`.
+## **25. Aggregation( Kết tập/ Tổng hợp):**
+* Được mô tả là một mối quan hệ `has-a` giữa các objects.
+* Một object chứa object khác như một phần cấu trúc của nó nhưng object được chứa **có thể tồn tại một cách độc lập.**
+* Ví dụ là một class phòng ban( `Department ()`) sơ hữu thuộc tính class `Teacher()` là danh sách các giáo viên nhưng 2 thực thể này vẫn tồn tại độc lập nhau mà không cần phải phụ thuộc. 
+* Nó là một dạng đặc biệt của liên kết( Association):
+    * Nó đại diện cho mối quan hệ `has-a`.
+    * Là liên kết đơn hướng( Uni-Directional Association).
+    * Trong Aggregation, cả hai thực thể có thể tồn tại riêng lẻ, nó có nghĩa là khi một entity kết thúc( hủy bỏ) thì nó không ảnh hưởng tới entity khác.
+    ![alt text](image-2.png)
+## **26. Composition( Hợp thành):**
+* `Composition` được đề cập là một mối quan hệ `part-of` giữa các objects. Ví dụ, một Engine là `part-of` Car.
+* Cho phép các object phức hợp( Complex Objects) được xây dựng từ các object nhỏ hơn.
 
---------------------TEMPLATE--------------------
-# This is a Heading h1
-## This is a Heading h2
-###### This is a Heading h6
+## **27. Wrapper classes:**
+* `Wrapper classes` cho phép các dữ liệu nguyên thủy( primitive values) như int, char, boolean được sử dụng như một `object`.
+* Lưu ý không nên 'wrap' các primitive value nếu bạn không cần một `object`.
+* Việc 'wrap' các primitive value cho phép chúng được sử dụng các `Collections Framework` và các `static Utility Methods` để được sử dụng trong `ArrayList`( Vì Arraylist chỉ chấp nhận các Object). Và trong `Wrapper Classes` có 2 khái niệm cơ bản là `Unboxing` và `AutoBoxing`.
+    * `AutoBoxing`: là quá trình tự động chuyển từ `primitive value` thành các lớp `Wrapper` tương ứng được Java thực hiện ngầm nhằm tiết kiệm thời gian.
+    ```
+    Integer number = 10; // Autoboxing: int được tự động chuyển thành Integer
+    ArrayList<Integer> list = new ArrayList<>();
+    list.add(5); // Autoboxing: 5 (int) được chuyển thành Integer
 
-## Emphasis
+    ```
+    * `UnBoxing`: Ngược lại với `AutoBoxing` thì `UnBoxing` là quá trình tự động chuyển đổi đối tượng lớp `Wrapper` về `primitive value` tương ứng.
 
-*This text will be italic*  
-_This will also be italic_
+    ```
+    Integer number = new Integer(20);
+    int value = number; // Unboxing: Integer được chuyển thành int
+    ```
 
-**This text will be bold**  
-__This will also be bold__
+    * Ví dụ về sự chuyển đổi giữa `primitive value` thành `Wrapper classes` và ngược lại:
+    ```
+    import java.util.ArrayList;
 
-_You **can** combine them_
+    public class WrapperExample {
+    public static void main(String[] args) {
+        // Autoboxing
+        Integer num = 100; // int -> Integer
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(200); // int -> Integer
 
-## Lists
+        // Unboxing
+        int value = num; // Integer -> int
+        int sum = numbers.get(0) + 50; // Integer -> int, sau đó thực hiện phép cộng
 
-### Unordered
+        System.out.println("Giá trị của num: " + value);
+        System.out.println("Tổng: " + sum);
+    }
+    }
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
-    * Item 3a
-    * Item 3b
-
-### Ordered
-
-1. Item 1
-2. Item 2
-3. Item 3
-    1. Item 3a
-    2. Item 3b
-
-## Images
-
-![This is an alt text.](/image/sample.webp "This is a sample image.")
-
-## Links
-
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
-
-## Blockquotes
-
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
->
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
-
-## Tables
-
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
-
-## Blocks of code
-
+    ```
+## **28. ArrayList:**
+* `ArrayList` là một `resizeable array` được dùng để lưu trữ các dữ liệu `objects`( autoboxing). ArrayList khắc phục đi hạn chế của `Array` là `Array` luôn luôn phải cấp phát một kích thước cố định( fixed size) khi khởi tạo còn `ArrayList` thì không.
 ```
-let message = 'Hello world';
-alert(message);
+ArayList<Integer> list = new ArayList<Integer>(); // ở đây chỉ có thể dùng các Wrapper class chứ không được dùng primitive value
+list.add(1);
+list.add(2);
+list.add(3);
+
+System.out.println(list);
 ```
+>Output:    [1, 2, 3]
 
-## Inline code
+* Ngoài .add() ra còn có các hàm khác như remove()... tham khảo tại : [ArrayList Methods GFG](https://www.geeksforgeeks.org/java/arraylist-in-java/).
 
-This web site is using `markedjs/marked`.
+## **30. Exception Handling:**
+
+## **31. Write files:**
+
+## **32. Read files:**
+
+## **33. Date & Time:**
+
+## **34. Anonymous Classes:**
+
+## **35. TimeTask:**
+
+## **36. Countdown Timer:**
+
+## **37. Generics:**
+
+## **38. Hashmaps:**
+
+## **39. Enums:**
+
+## **40. Threading:**
+
+## **41. MultiThreading:**
+
+## **42. Alarm Clock:**
