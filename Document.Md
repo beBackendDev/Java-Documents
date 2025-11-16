@@ -691,6 +691,7 @@ Là một lớp kế thừa từ `Interface Map` nằm trong `**Collections Fram
 (Đây là Thoai 2 thay đổi để rebase)
 ## **39. Enums:**
 (Đây là Thoi 2 đổi)
+(Đây là MrThoi thay đổi để rebase)
 ## **40. Threading:**
 
 ## **41. MultiThreading:**
