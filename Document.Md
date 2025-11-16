@@ -689,6 +689,8 @@ Là một lớp kế thừa từ `Interface Map` nằm trong `**Collections Fram
 
 (Đây là MrThoi thay đổi)
 (Đây là Thoai 2 thay đổi để rebase)
+(Đây là Thoai 2 thay đổi để merge)
+
 ## **39. Enums:**
 (Đây là Thoi 2 đổi)
 (Đây là MrThoi thay đổi để rebase)
