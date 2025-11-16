@@ -689,7 +689,7 @@ Là một lớp kế thừa từ `Interface Map` nằm trong `**Collections Fram
 
 (Đây là MrThoi thay đổi)
 ## **39. Enums:**
-
+(Đây là Thoi 2 đổi)
 ## **40. Threading:**
 
 ## **41. MultiThreading:**
