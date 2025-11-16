@@ -482,8 +482,25 @@ System.out.println(list);
 * Ngoài .add() ra còn có các hàm khác như remove()... tham khảo tại : [ArrayList Methods GFG](https://www.geeksforgeeks.org/java/arraylist-in-java/).
 
 ## **30. Exception Handling:**
+* `Exception` là một sự kiện làm ngắt quãng( Interrupts) một flow( luồng) của một chương trình( Diving by zero, file not found, mismatch, input type...). Thông thường là lỗi `runtime`.
+* Bao bọc mọi mối nguy hiểm tiềm ẩn trong code của bạn bằng khối `try{} block` `try{} catch(){} finally{}`. Giúp chương trình tránh đi những lỗi runtime không đáng có và vẫn tiếp tục thực hiện chương trình sau khi throw ra Exception.
+
+```
+try {
+    // Code that might throw an exception
+    int result = 10 / 0; // This will throw an ArithmeticException
+} catch (ArithmeticException e) {
+    // Handle the ArithmeticException
+    System.out.println("Error: Cannot divide by zero.");
+}
+```
 
 ## **31. Write files:**
+* Việc thực hiện Write files trong Java có 4 lựa chọn phổ biến:
+    * `FileWriter` = Thực hiện tốt cho input files có kích thức nhỏ hoặc vừa.
+    * `BufferedWriter` = Thực hiện tốt cho một lượng lớn văn bản đầu vào.
+    * `PrintWriter` = Thực hiện tốt cho cấu trúc dữ liệu như `reports` or `logs`.
+    * `FileOutputStream` = Thực hiện tốt cho file nhị phân( binary files) như Imges,audio files.
 
 ## **32. Read files:**
 
@@ -496,9 +513,181 @@ System.out.println(list);
 ## **36. Countdown Timer:**
 
 ## **37. Generics:**
+* `Generics` là nơi bạn có thể viết `class`, `interface`, hoặc `methods` mà nó có thể tương thích( compatible) với mọi kiểu dữ liệu khác nhau.
+* `<T>` kiểu tham số (type paramater) nó có thể được thay thế với một kiểu dữ liệu thực. Trong đó `T` có thể có 1 hoặc nhiều tham số đầu vào là kiểu dữ liệu khác nhau. Ví dụ :
+```
+ArrayList<T> stringList = new ArrayList<T>();//tạo một arraylist với kiểu dữ liệu là T
+```
+* Bởi vì `generics` được khai báo kiểu dữ liệu tổng quát cho nên nó có thể kiểm soát tốt được các lỗi `runtime` có thể xảy ra với chương trình.
+```
+// Không dùng Generics
+List list = new ArrayList();
+list.add(10);
+list.add("Java");
+for (Object obj : list) {
+    Integer value = (Integer) obj; // Gây lỗi runtime nếu obj là String
+    System.out.println(value);
+}
+
+// Có Generics
+List<Integer> list = new ArrayList<>();
+list.add(10);
+// list.add("Java"); // Compile-time: Lỗi
+for (Integer value : list) {
+    System.out.println(value); // Không bao giờ lỗi runtime
+}
+
+```
+* `generic` trong Java có thể có `generic class` và `generic method`
+    * **`generic class`** cho phép bạn có để định nghĩa kiểu dữ liệu tổng quát( generic ) tại thời điểm khai báo. Với `generic class` bạn có thể linh hoạt trong việc viết mã và tái sử dụng `class` một cách an toàn.
+    ```
+    class ClassName<T> {
+    private T value;
+
+    public void setValue(T value) {
+        this.value = value;
+    }
+
+    public T getValue() {
+        return value;
+    }
+    }
+    ```
+    * Trong đó thì `T` được đại diện cho `data type` (ví dụ String, Integer...). Bạn có thể sử dụng bất kì kí tự nào nhưng để dễ dàng kiểm soát thì nên sử dụng các kí tự liên quan đến mục đích( T: type, E: element, K: key, V: value). Dưới đây là một ví dụ cụ thể trong việc sử dụng `generic class`:
+    ```
+    // Định nghĩa Generic Class
+    class Box<T> {
+        private T item;
+
+        public void setItem(T item) {
+            this.item = item;
+        }
+
+        public T getItem() {
+            return item;
+        }
+    }
+
+    // Sử dụng Generic Class
+    public class Main {
+        public static void main(String[] args) {
+            Box<String> stringBox = new Box<>();
+            stringBox.setItem("Hello Generics");
+            System.out.println("String Box: " + stringBox.getItem());
+
+            Box<Integer> integerBox = new Box<>();
+            integerBox.setItem(123);
+            System.out.println("Integer Box: " + integerBox.getItem());
+        }
+    }
+
+    ```
+    * Như đã nói ở trên thì `generic class` có hỗ trợ nhiều tham số cùng một lúc( multiple type paramaters):
+    ```
+    class Pair<K, V> {
+    private K key;
+    private V value;
+
+    public Pair(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public K getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+    }        
+
+    public class Main {
+        public static void main(String[] args) {
+            Pair<String, Integer> pair = new Pair<>("Age", 30);
+            System.out.println("Key: " + pair.getKey());
+            System.out.println("Value: " + pair.getValue());
+        }
+    }
+    ```
+    * Bạn có thể giới hạn tham số bằng cách `extends` `data_type`. Dưới đây là ví dụ vể giới hạn tham số và chi tiết là giới hạn kiểu trong kiểu `Number`.
+    ```
+    class NumberBox<T extends Number> {
+    private T number;
+
+    public void setNumber(T number) {
+        this.number = number;
+    }
+
+    public T getNumber() {
+        return number;
+    }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            NumberBox<Integer> intBox = new NumberBox<>();
+            intBox.setNumber(100);
+            System.out.println("Integer: " + intBox.getNumber());
+
+            NumberBox<Double> doubleBox = new NumberBox<>();
+            doubleBox.setNumber(10.5);
+            System.out.println("Double: " + doubleBox.getNumber());
+
+            // NumberBox<String> stringBox = new NumberBox<>(); // Lỗi compile-time
+        }
+    }
+
+    ```
+    > **\<T extends Number\>** giới hạn giá trị của T chỉ nằm trong phạm vi Number( Integer, Double,...)
+
+    * **`generic method`:** là phương thức cho phép người dùng sử dụng kiểu dữ liệu tổng quát( generic) thay vì kiểu dữ liệu cố định. `generic method`  sẽ được định nghĩa khi phương thức được gọi.
+    ```
+    public <T> ReturnType methodName(T parameter) {
+    // Thân phương thức
+    }
+    ```
+
+    > **\<T\>**: khai báo một tham số với kiểu dữ liệu tổng quát.
+    > **T paramater**: Sử dụng kiểu dữ liệu `generic` làm tham số 
+    > **ReturnType**: Phương thức có thể trả về kiểu `T` hoặc kiểu khác.
+
+    ```
+    public class GenericMethodExample {
+
+    // Generic method
+    public static <T> void printArray(T[] array) {
+        for (T item : array) {
+            System.out.println(item);
+        }
+    }
+
+    public static void main(String[] args) {
+        String[] stringArray = { "Apple", "Banana", "Cherry" };
+        Integer[] intArray = { 1, 2, 3 };
+
+        // Gọi phương thức generic
+        printArray(stringArray);
+        printArray(intArray);
+    }
+    }
+
+    ```
+    > Output: 
+    ```
+    Apple
+    Banana
+    Cherry
+    1
+    2
+    3
+    ```
+    
 
 ## **38. Hashmaps:**
+Là một lớp kế thừa từ `Interface Map` nằm trong `**Collections Framework**`
 
+(Đây là MrThoi thay đổi)
 ## **39. Enums:**
 
 ## **40. Threading:**
