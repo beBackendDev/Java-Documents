@@ -688,6 +688,7 @@ for (Integer value : list) {
 Là một lớp kế thừa từ `Interface Map` nằm trong `**Collections Framework**`
 
 (Đây là MrThoi thay đổi)
+(Đây là Thoai 2 thay đổi để rebase)
 ## **39. Enums:**
 (Đây là Thoi 2 đổi)
 ## **40. Threading:**
