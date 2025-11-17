@@ -2,3 +2,4 @@ hello
 
 MrThoi changed in feature/branch1
 feature/branch1 cm2(MrThoi changed)
+feature/branch1 cm5(MrThoi changed to test rebase)
