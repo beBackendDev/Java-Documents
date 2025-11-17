@@ -7,3 +7,5 @@ feature/branch1 cm3
 feature/branch1 cm4(beBackendDev changed) 
 
 feature/branch1 cm5(beBackendDev changed to test rebase)
+
+MrThoi changed in feature/branch1
