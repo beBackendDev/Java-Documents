@@ -2,3 +2,4 @@ hello
 beBackendDev change
 1 nguoi lam 1 tinh nang va nhieu nguoi lam mot tinh nang
 MrThoi changed in feature/branch1
+feature/branch1 cm2(MrThoi changed)
